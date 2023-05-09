@@ -26,7 +26,7 @@ btnCloseModal.addEventListener(`click`, closeModal);
 
 const fetchData = async function () {
   const fetchUser = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/user`
+    `https://festive-childish-honey.glitch.me/user`
   );
   const parseUser = await fetchUser.json();
 
@@ -38,7 +38,7 @@ const fetchData = async function () {
   }
 
   const fetchStatus = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/status`
+    `https://festive-childish-honey.glitch.me/status`
   );
   const parseStatus = await fetchStatus.json();
 
@@ -50,7 +50,7 @@ const fetchData = async function () {
   }
 
   const fetchIssue = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/issues`
+    `https://festive-childish-honey.glitch.me/issues`
   );
   const parseIssue = await fetchIssue.json();
 
@@ -62,7 +62,7 @@ const fetchData = async function () {
   }
 
   const fetchIssues = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/action`
+    `https://festive-childish-honey.glitch.me/action`
   );
   const parseIssues = await fetchIssues.json();
 
@@ -110,7 +110,7 @@ pieteikumuForm.addEventListener(`submit`, (e) => {
 
   console.log(obj);
 
-  fetch("https://blossom-futuristic-continent.glitch.me/post2", {
+  fetch("https://festive-childish-honey.glitch.me/post2", {
     method: "post",
     headers: {
       "Content-Type": "application/json",

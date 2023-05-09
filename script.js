@@ -29,7 +29,7 @@ btnCloseModal.addEventListener(`click`, closeModal);
 
 const fetchData = async function () {
   const fetchUser = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/user`
+    `https://festive-childish-honey.glitch.me/user`
   );
   const parseUser = await fetchUser.json();
 
@@ -48,7 +48,7 @@ const fetchData = async function () {
   }
 
   const fetchSource = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/source`
+    `https://festive-childish-honey.glitch.me/source`
   );
   const parseSource = await fetchSource.json();
 
@@ -60,7 +60,7 @@ const fetchData = async function () {
   }
 
   const fetchObject = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/object`
+    `https://festive-childish-honey.glitch.me/object`
   );
   const parseObject = await fetchObject.json();
 
@@ -72,7 +72,7 @@ const fetchData = async function () {
   }
 
   const fetchDevice = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/device`
+    `https://festive-childish-honey.glitch.me/device`
   );
   const parseDevice = await fetchDevice.json();
 
@@ -84,7 +84,7 @@ const fetchData = async function () {
   }
 
   const fetchType = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/type`
+    `https://festive-childish-honey.glitch.me/type`
   );
   const parseType = await fetchType.json();
 
@@ -96,7 +96,7 @@ const fetchData = async function () {
   }
 
   const fetchIssue = await fetch(
-    `https://blossom-futuristic-continent.glitch.me/issue`
+    `https://festive-childish-honey.glitch.me/issue`
   );
   const parseIssue = await fetchIssue.json();
 
@@ -153,7 +153,7 @@ pieteikumuForm.addEventListener(`submit`, (e) => {
 
   console.log(obj);
 
-  fetch("https://blossom-futuristic-continent.glitch.me/post", {
+  fetch("https://festive-childish-honey.glitch.me/post", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
