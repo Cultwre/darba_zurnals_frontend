@@ -28,7 +28,9 @@ overlay.addEventListener(`click`, closeModal);
 btnCloseModal.addEventListener(`click`, closeModal);
 
 const fetchData = async function () {
-  const fetchUser = await fetch(`http://127.0.0.1:3000/user`);
+  const fetchUser = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/user`
+  );
   const parseUser = await fetchUser.json();
 
   // for (let i = 0; i < parseUser.length; i++) {
@@ -45,7 +47,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchSource = await fetch(`http://127.0.0.1:3000/source`);
+  const fetchSource = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/source`
+  );
   const parseSource = await fetchSource.json();
 
   for (let i = 0; i < parseSource.length; i++) {
@@ -55,7 +59,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchObject = await fetch(`http://127.0.0.1:3000/object`);
+  const fetchObject = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/object`
+  );
   const parseObject = await fetchObject.json();
 
   for (let i = 0; i < parseObject.length; i++) {
@@ -65,7 +71,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchDevice = await fetch(`http://127.0.0.1:3000/device`);
+  const fetchDevice = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/device`
+  );
   const parseDevice = await fetchDevice.json();
 
   for (let i = 0; i < parseDevice.length; i++) {
@@ -75,7 +83,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchType = await fetch(`http://127.0.0.1:3000/type`);
+  const fetchType = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/type`
+  );
   const parseType = await fetchType.json();
 
   for (let i = 0; i < parseType.length; i++) {
@@ -85,7 +95,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchIssue = await fetch(`http://127.0.0.1:3000/issue`);
+  const fetchIssue = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/issue`
+  );
   const parseIssue = await fetchIssue.json();
 
   for (let i = 0; i < parseIssue.length; i++) {
@@ -141,7 +153,7 @@ pieteikumuForm.addEventListener(`submit`, (e) => {
 
   console.log(obj);
 
-  fetch("http://127.0.0.1:3000/post", {
+  fetch("https://blossom-futuristic-continent.glitch.me/post", {
     method: "post",
     headers: {
       "Content-Type": "application/json",

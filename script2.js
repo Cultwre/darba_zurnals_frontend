@@ -25,7 +25,9 @@ overlay.addEventListener(`click`, closeModal);
 btnCloseModal.addEventListener(`click`, closeModal);
 
 const fetchData = async function () {
-  const fetchUser = await fetch(`http://127.0.0.1:3000/user`);
+  const fetchUser = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/user`
+  );
   const parseUser = await fetchUser.json();
 
   for (let i = 0; i < parseUser.length; i++) {
@@ -35,7 +37,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchStatus = await fetch(`http://127.0.0.1:3000/status`);
+  const fetchStatus = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/status`
+  );
   const parseStatus = await fetchStatus.json();
 
   for (let i = 0; i < parseStatus.length; i++) {
@@ -45,7 +49,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchIssue = await fetch(`http://127.0.0.1:3000/issues`);
+  const fetchIssue = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/issues`
+  );
   const parseIssue = await fetchIssue.json();
 
   for (let i = 0; i < parseIssue.length; i++) {
@@ -55,7 +61,9 @@ const fetchData = async function () {
     );
   }
 
-  const fetchIssues = await fetch(`http://127.0.0.1:3000/action`);
+  const fetchIssues = await fetch(
+    `https://blossom-futuristic-continent.glitch.me/action`
+  );
   const parseIssues = await fetchIssues.json();
 
   for (let i = 0; i < parseIssues.length; i++) {
@@ -102,7 +110,7 @@ pieteikumuForm.addEventListener(`submit`, (e) => {
 
   console.log(obj);
 
-  fetch("http://127.0.0.1:3000/post2", {
+  fetch("https://blossom-futuristic-continent.glitch.me/post2", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
