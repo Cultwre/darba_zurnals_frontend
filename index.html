@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="title">Darbu pieteikumi</h1>     
+        <div class="route">
+          <a href="index2.html">
+            <img class="right-arrow" src="./img/right-arrow.png"></img>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="button-container">
+        <button class="create">Izveidot pieteikumu</button>
+      </div>  
+    </main>
+      <div class="modal hidden">
+              <button class="close-modal">&times;</button>
+      <form class="form">
+        <div class="inputs">
+          <div class="first part">
+            <h2>Nosaukums</h2>        
+              <input required class="name__input" id="title" type="text" name="name"/>
+            <h2>Lietotajs</h2>   
+              <!-- <input class="user__input" list="users" name="user"/>
+              <datalist id="users">
+              </datalist> -->
+              <select required class="user__input" id="users" name="user">
+                <option> </option>
+
+              </select>             
+            <h2>Avots</h2>    
+            <select required class="source__input" id="sources" name="source">
+              <option> </option>
+
+            </select>     
+            <h2>Objekts</h2>
+            <select required class="object__input" id="objects" name="object">
+              <option> </option>
+
+            </select> 
+          </div>
+          <div class="second part">
+            <h2>Ierīce</h2>
+            <select required class="device__input" id="devices" name="device">
+              <option> </option>
+
+            </select> 
+            <h2>Problēmas tips</h2>
+            <select required class="type__input" id="types" name="type">
+              <option> </option>
+
+            </select> 
+            <h2>Piezīmes</h2>
+              <textarea required class="note__input" id="note" name="note" style="height: 16vh; width: 50vh;"> </textarea>
+          </div>  
+        </div>
+        <div class="submit">
+          <button class="submit__btn" type="submit">Nosūtīt</button> 
+        </div>
+      </div>
+    </form>
+    <div class="tableParent">
+      <table class="table">
+        <thead>
+          <tr class="tr">
+            <th>id</th>
+            <th>Datums</th>
+            <th>Laiks</th>
+            <th>Lietotajs</th>
+            <th>Avots</th>
+            <th>Nosaukums</th>
+            <th>Objekts</th>
+            <th>Ierīce</th>
+            <th>Problēmas tips</th>
+            <th>Piezīmes</th>
+          </tr>
+        </thead>
+        <tbody class="issues">
+
+        </tbody>
+      </table>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

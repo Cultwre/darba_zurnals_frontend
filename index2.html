@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script2.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="route2">
+            <a href="index.html">
+                <img class="left-arrow" src="./img/right-arrow.png"></img>
+              </a>
+          </div>
+        <h1 class="title2">Darbu risinājumi</h1>
+      </div>
+    </header>
+    <main>
+      <div class="button-container">
+        <button class="create2">Izveidot risinājumu</button>
+      </div> 
+      </main>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <form class="form2">
+          <div class="inputs">
+            <div class="first part">
+              <h2>Nosaukums</h2>        
+                <input required class="name__input" id="title" type="text" name="name"/>
+                <h2>Status</h2>    
+            <select required class="status__input" id="statuses" name="status">
+              <option> </option>
+            </select> 
+            </div> 
+            <div class="second part">
+              <h2>Lietotajs</h2>   
+              <select required class="user__input" id="users" name="user">
+                <option> </option>
+              </select> 
+              <h2>Pieteikumu id</h2>   
+              <select required class="issueId__input" id="issuesId" name="issueId">
+                <option> </option>
+              </select> 
+            </div>   
+          </div>
+          <div class="submit">
+            <button class="submit__btn2" type="submit">Nosūtīt</button> 
+          </div>
+        </div>
+      </form>
+      <div class="tableParent2">
+        <table class="table2">
+          <thead>
+            <tr class="tr2">
+              <th>id</th>
+              <th>Nosaukums</th>
+              <th>Status</th> 
+              <th>Datums</th>
+              <th>Laiks</th>  
+              <th>Lietotajs</th>                       
+              <th>Pieteikumu id</th>
+            </tr>
+          </thead>
+          <tbody class="issues2">
+  
+          </tbody>
+        </table>
+      </div>
+      <div class="overlay hidden"></div>
+  </body>
+</html>
